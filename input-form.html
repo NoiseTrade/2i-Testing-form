@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/teststyle.css">
+
+    <!-- script to display the details that are entered into the form -->
+    <script>
+        function showDetails(){
+           
+            var first_name = document.getElementById("first_name").value;
+            var last_name = document.getElementById("last_name").value;
+            var email = document.getElementById("email").value;
+            var age = document.getElementById("age").value;
+            var address = document.getElementById("address").value;
+            var vehicle = document.getElementById("vehicle").value;
+            var language = document.getElementById("language").value;
+            var phone_no = document.getElementById("phone_no").value;
+
+            var result = "\n" + first_name + " | " + last_name + " | " + email + " " + age + " " +  address + " " + vehicle
+            + " " + language + " " +  phone_no;
+
+            document.getElementById('display').textContent = result;
+
+
+        }
+    </script>
+
+</head>
+
+<h1>David McClung</h1>
+
+<body>
+    <!-- A form that inputs information -->
+
+<div class="cypress-test-form">
+    <div class="input-body">
+
+        <h1>Test Form</h1>
+
+        <!-- Text fields for the json data -->
+    <div class="first-name-text-field">
+        <input type="text" name="first_name" class="form-control" placeholder="First Name" value="" data-cy="first_name" id="first_name">
+    </div>
+    <div class="last-name-text-field">
+        <input type="text" name="last_name" class="form-control" placeholder="Last Name" value="" data-cy="last_name" id="last_name">
+    </div>
+    <div class="email-text-field">
+        <input type="text" name="email" class="form-control" placeholder="Email" value="" data-cy="email" id="email">
+    </div>
+    <div class="age-text-field">
+        <input type="text" name="age" class="form-control" placeholder="Age" value="" data-cy="age" id="age">
+    </div>
+    <div class="address-text-field">
+        <input type="text" name="address" class="form-control" placeholder="Address" value="" data-cy="address" id="address">
+    </div>
+    <div class="vehicle-text-field">
+        <input type="text" name="vehicle" class="form-control" placeholder="Vehicle" value="" data-cy="vehicle" id="vehicle">
+    </div>
+    <div class="language-text-field">
+        <input type="text" name="langauge" class="form-control" placeholder="language" value="" data-cy="language" id="language">
+    </div>
+    <div class="phone-no-text-field">
+        <input type="text" name="phone_no" class="form-control" placeholder="Phone Number" value="" data-cy="phone_no" id="phone_no">
+    </div>
+
+    <!-- Submit button  -->
+    <div class="submit-button">
+        <input type="submit" onclick="showDetails();" class="button" value="Submit" data-cy="submit">
+        
+    </div>
+    </div>
+</div>
+
+<div class="display-input-data">
+    <p data-cy="values">Details: <br<span id = 'display'></span></br></p>
+
+
+</div>
+
+
+</body>
+</html>

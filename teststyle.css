@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1{
+    text-align: center;
+}
+
+.cypress-test-form{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0);
+   
+    text-align: center;
+
+
+}
+
+
+.input-body input[type="text"]{
+
+    background: rgba(249, 249, 249, 0.514);
+    border: 0;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    border: 0.5px solid #ffffff;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+.display-input-data{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0);
+   
+    text-align: center;
+}
+
+.input-body input[type="submit"]{
+
+    background: rgba(249, 249, 249, 0.514);
+    border: 0;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    border: 0.5px solid #ffffff;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+
+}
